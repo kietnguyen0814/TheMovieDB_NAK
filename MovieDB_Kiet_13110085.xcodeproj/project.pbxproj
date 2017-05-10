@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2E13CC7D1EC2C9AD00787A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13CC7C1EC2C9AD00787A25 /* AppDelegate.swift */; };
-		2E13CC7F1EC2C9AD00787A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13CC7E1EC2C9AD00787A25 /* ViewController.swift */; };
 		2E13CC821EC2C9AD00787A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E13CC801EC2C9AD00787A25 /* Main.storyboard */; };
 		2E13CC841EC2C9AD00787A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E13CC831EC2C9AD00787A25 /* Assets.xcassets */; };
 		2E13CC871EC2C9AD00787A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E13CC851EC2C9AD00787A25 /* LaunchScreen.storyboard */; };
 		2E13CC921EC2C9AD00787A25 /* MovieDB_Kiet_13110085Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13CC911EC2C9AD00787A25 /* MovieDB_Kiet_13110085Tests.swift */; };
 		2E13CC9D1EC2C9AD00787A25 /* MovieDB_Kiet_13110085UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13CC9C1EC2C9AD00787A25 /* MovieDB_Kiet_13110085UITests.swift */; };
+		2E13CCAC1EC2CA6A00787A25 /* MovieDBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13CCAB1EC2CA6A00787A25 /* MovieDBTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2E13CC791EC2C9AD00787A25 /* MovieDB_Kiet_13110085.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB_Kiet_13110085.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E13CC7C1EC2C9AD00787A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E13CC7E1EC2C9AD00787A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E13CC811EC2C9AD00787A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E13CC831EC2C9AD00787A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E13CC861EC2C9AD00787A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		2E13CC981EC2C9AD00787A25 /* MovieDB_Kiet_13110085UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDB_Kiet_13110085UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E13CC9C1EC2C9AD00787A25 /* MovieDB_Kiet_13110085UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDB_Kiet_13110085UITests.swift; sourceTree = "<group>"; };
 		2E13CC9E1EC2C9AD00787A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E13CCAB1EC2CA6A00787A25 /* MovieDBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				2E13CC7C1EC2C9AD00787A25 /* AppDelegate.swift */,
-				2E13CC7E1EC2C9AD00787A25 /* ViewController.swift */,
-				2E13CC801EC2C9AD00787A25 /* Main.storyboard */,
+				2E13CCAA1EC2CA3000787A25 /* View */,
 				2E13CC831EC2C9AD00787A25 /* Assets.xcassets */,
-				2E13CC851EC2C9AD00787A25 /* LaunchScreen.storyboard */,
 				2E13CC881EC2C9AD00787A25 /* Info.plist */,
+				2E13CCAD1EC2CA6F00787A25 /* Controller */,
 			);
 			path = MovieDB_Kiet_13110085;
 			sourceTree = "<group>";
@@ -123,6 +122,23 @@
 				2E13CC9E1EC2C9AD00787A25 /* Info.plist */,
 			);
 			path = MovieDB_Kiet_13110085UITests;
+			sourceTree = "<group>";
+		};
+		2E13CCAA1EC2CA3000787A25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E13CC801EC2C9AD00787A25 /* Main.storyboard */,
+				2E13CC851EC2C9AD00787A25 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2E13CCAD1EC2CA6F00787A25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E13CCAB1EC2CA6A00787A25 /* MovieDBTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E13CC7F1EC2C9AD00787A25 /* ViewController.swift in Sources */,
+				2E13CCAC1EC2CA6A00787A25 /* MovieDBTableViewController.swift in Sources */,
 				2E13CC7D1EC2C9AD00787A25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
